@@ -41,6 +41,12 @@ nav a {
   nav a {
     font-size: 18px;
   }
+.logo {
+  display: block;
+  margin: 40px auto 20px;
+  width: 160px;
+  max-width: 80%;
+}
 
   .cta-button {
     font-size: 18px;
