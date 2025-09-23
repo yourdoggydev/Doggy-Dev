@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doggy Dev | Quote Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <img src="logo.png" alt="Doggy Dev Logo" class="logo">
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="services.html">Services</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="faq.html">FAQ</a> |
+    <a href="quote.html">Quote</a>
+  </nav>
+
+  <h1>Get a Quote</h1>
+
+  <div class="quote-section">
+    <p>Use our calculator to estimate your total cost based on service type and number of sessions.</p>
+
+    <form class="quote-form">
+      <label for="service">Select a Service</label>
+      <select id="service" name="service">
+        <option value="30">🐾 Standard Care – $30/session</option>
+        <option value="50">🧠 Premium Training – $50/session</option>
+        <option value="60">🦮 Special Needs Support – $60/session</option>
+      </select>
+
+      <label for="sessions">Number of Sessions</label>
+      <input type="number" id="sessions" name="sessions" min="1" value="1">
+
+      <button type="button" class="cta-button" onclick="calculateQuote()">Calculate</button>
+
+      <p id="quote-result"><strong>Total:</strong> $0</p>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Doggy Dev. All rights reserved.</p>
+    <p>Serving Greater St. Louis with heart, experience, and a whole lot of tail wags.</p>
+  </footer>
+
+  <script>
+    function calculateQuote() {
+      const rate = parseInt(document.getElementById('service').value);
+      const sessions = parseInt(document.getElementById('sessions').value);
+      const total = rate * sessions;
+      document.getElementById('quote-result').innerHTML = `<strong>Total:</strong> $${total}`;
+    }
+  </script>
+</body>
+</html>
