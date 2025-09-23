@@ -1,14 +1,29 @@
 /* Base styles */
 body {
-  font-size: 20px; /* Base size for all text */
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #222;
 }
 
 h1 {
   font-size: 48px;
+  text-align: center;
+  margin-top: 40px;
+  color: #002B5B;
 }
 
 h2 {
   font-size: 32px;
+  color: #002B5B;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #002B5B;
 }
 
 p {
@@ -17,8 +32,20 @@ p {
   margin-bottom: 20px;
 }
 
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
 nav a {
   font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #002B5B;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 .logo {
@@ -28,6 +55,7 @@ nav a {
   max-width: 80%;
 }
 
+/* Call-to-action button */
 .cta-button {
   font-size: 20px;
   padding: 14px 28px;
@@ -54,7 +82,6 @@ nav a {
 }
 
 .services-section h2 {
-  color: #002B5B;
   margin-top: 30px;
 }
 
@@ -78,6 +105,32 @@ nav a {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* About section */
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.about-section h2 {
+  margin-top: 30px;
+}
+
+.about-section p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #F5F5F5;
+  color: #444;
+  font-size: 16px;
+}
+
 /* Responsive styles */
 @media (max-width: 600px) {
   body {
@@ -90,6 +143,10 @@ nav a {
 
   h2 {
     font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
   }
 
   nav a {
