@@ -209,3 +209,37 @@ nav a:hover {
     padding: 12px 24px;
   }
 }
+/* Quote calculator section */
+.quote-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.quote-form label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.quote-form select,
+.quote-form input {
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#quote-result {
+  font-size: 20px;
+  margin-top: 10px;
+}
